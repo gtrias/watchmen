@@ -9,7 +9,7 @@ redis:
 watchmenweb:
     build: ./
     ports:
-        - "3000:3000"
+        - "3023:3000"
     links:
         - redis
     command: node run-web-server.js
