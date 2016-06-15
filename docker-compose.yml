@@ -5,7 +5,7 @@ redis:
     # expose db in the host /data dir, make sure to create and set permissions for this folder
     volumes:
         - ./redis.conf:/usr/local/etc/redis/redis.conf
-        - /data:/data
+        - /var/docker-data/watchmen/data:/data
 watchmenweb:
     build: ./
     ports:
